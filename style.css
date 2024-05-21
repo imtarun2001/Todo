@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    border-radius: .5rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+#container {
+    height: 100vh;
+    border-radius: 0rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+    #todo {
+        height: 90vh;
+        width: 45vw;
+        border-radius: 1.5rem;
+        box-shadow :0 0 4rem cornflowerblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+        #header {
+            height: 7%;
+            width: 95%;
+            border: .1rem solid rgb(240, 0, 216);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+            #appName {
+                width: 80%;
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+            .anime {
+                border: .1rem solid blueviolet;
+                background-image: linear-gradient(to left, #8b4dff, #55fffc);
+                border-radius: .6rem;
+                position: relative;
+                animation: leftRight 5s linear infinite alternate;
+                font-family: "Philosopher", sans-serif;
+                font-weight: 700;
+                font-style: normal;
+                font-size: 3rem;
+                color: black;
+            }
+            @keyframes  leftRight{
+                from {left: .2rem;}
+                to {left: 24.5rem;}
+            }
+            .material-symbols-outlined {
+                color: black;
+            }
+            #dateContainer {
+                border-left: .1rem solid rgb(240, 0, 216);
+                border-radius: 0rem;
+                height: 100%;
+                width: 20%;
+                color: cornflowerblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                font-family: "Pacifico", cursive;
+                font-weight: 400;
+                font-style: normal;
+                font-size: larger;
+            }
+        #inputTask {
+            height: 7%;
+            width: 95%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+            #input {
+                height: 80%;
+                width: 75%;
+                padding-left: .5rem;
+                border: .1rem solid rgb(63, 38, 255);
+                color: rgb(28, 1, 150);
+                font-size: larger;
+                font-family: "Noto Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 500;
+                font-style: normal;
+                font-variation-settings:
+                "wdth" 100;
+            }
+            #save {
+                border: .1rem solid rgb(0, 242, 255);
+                height: 100%;
+                width: 10%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.5rem;
+                color: aqua;
+                cursor: pointer;
+            }
+
+        #taskContainer {
+            height: 80%;
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow-y: scroll;
+        }
+        #taskContainer::-webkit-scrollbar {
+            width: .1rem;
+        }

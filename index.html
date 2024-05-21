@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My TODO</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Philosopher:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div id="container">
+        <div id="todo">
+
+            <div id="header">
+                <div id="appName"> <div class="anime">TODOs APP <span class="material-symbols-outlined">task_alt</span></div></div>
+                <div id="dateContainer"></div>
+            </div>
+
+            <div id="inputTask">
+                <input type="text" id="input">
+                <i id="save" class="fa-solid fa-floppy-disk" onclick="onClickOnSave()"></i>
+            </div>
+
+            <div id="taskContainer">
+                
+            </div>
+
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/c864b53c3e.js" crossorigin="anonymous"></script>
+</body>
+</html>
